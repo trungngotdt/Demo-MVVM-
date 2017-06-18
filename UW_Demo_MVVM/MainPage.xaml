@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="UW_Demo_MVVM.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UW_Demo_MVVM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core">
+    <Page.DataContext>
+        
+        <local:ViewModel></local:ViewModel>
+    </Page.DataContext>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <StackPanel Orientation="Vertical" x:Name="Stac">
+            <TextBlock Name="Txbl_a"
+                       Height="50"
+                       Text="{Binding Txt.Text}"></TextBlock>
+            <TextBox x:Name="Txb_a"
+                     Background="Bisque">
+                <!--ap dung cho tat ca cac event va Control-->
+                <i:Interaction.Behaviors>
+                    <core:EventTriggerBehavior EventName="TextChanged">
+                        <core:InvokeCommandAction Command="{Binding DeleClick}"></core:InvokeCommandAction>
+                    </core:EventTriggerBehavior>
+                </i:Interaction.Behaviors>
+                <!---->
+            </TextBox>
+            <Button x:Name="Bnt_Click"
+                    HorizontalAlignment="Stretch"
+                    Content=" Btn_Click">
+                
+            </Button>
+            <Button x:Name="Btn_OK"
+                    Content="OK"
+                    HorizontalAlignment="Stretch"
+                    Command="{Binding Click}"
+                    CommandParameter="{Binding ElementName=Stac, Path=Children}"></Button>
+            <Button x:Name="Click"
+                    Content="Click"
+                    Command="{Binding ClickCommand}"
+                    HorizontalAlignment="Stretch"></Button>       
+        </StackPanel>
+
+    </Grid>
+</Page>

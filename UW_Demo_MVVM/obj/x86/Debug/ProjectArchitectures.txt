@@ -1,0 +1,1 @@
+C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\UW_Demo_MVVM.csproj;x86

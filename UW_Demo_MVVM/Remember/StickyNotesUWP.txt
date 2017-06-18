@@ -1,0 +1,18 @@
+﻿Cài NuGet :Microsoft.Xaml.Behaviors.Uwp.Managed và Prism.Mvvm
+thư viện :using Microsoft.Practices.Prism.Commands;
+câu code ví dụ trong ViewModel:
+
+public DelegateCommand DeleClick { get; set; }
+
+DeleClick = new DelegateCommand(Method);
+
+câu code vì dụ trong MainPage.xaml:
+
+xmlns:i="using:Microsoft.Xaml.Interactivity"
+xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+
+<i:Interaction.Behaviors>
+                    <core:EventTriggerBehavior EventName="TextChanged">
+                        <core:InvokeCommandAction Command="{Binding DeleClick}"></core:InvokeCommandAction>
+                    </core:EventTriggerBehavior>
+</i:Interaction.Behaviors>

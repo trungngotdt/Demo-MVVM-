@@ -1,0 +1,8 @@
+﻿Tham chiếu đến thư viện dll :xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
+trong MainWindow.xaml ( hay lớp View )
+Câu code trong xaml ví dụ:
+<i:Interaction.Triggers>
+      <i:EventTrigger EventName="Click">
+              <i:InvokeCommandAction Command="{Binding Click}"/>
+      </i:EventTrigger>
+</i:Interaction.Triggers>

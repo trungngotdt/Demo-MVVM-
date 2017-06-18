@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:VM  x:Key="Key"></local:VM>
+    </Window.Resources>
+    <!---->
+    <Window.DataContext>
+        <local:VM ></local:VM>
+    </Window.DataContext>
+    <!---->
+    <Grid>
+        
+        <StackPanel x:Name="Stac">
+            <TextBlock Name="Txbl_a"
+                       Height="50"                       
+                       Text="{Binding _Text.Ten}"
+                       ></TextBlock>
+            
+            <TextBox x:Name="Txb_a"
+                     Background="Bisque"
+                     >
+            </TextBox>
+            
+            <Button x:Name="Btn_Click"
+                    Content="Click"
+                    DataContext="{StaticResource Key}">
+                <!--Su dung cho tat ca cac event-->
+               <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding Click}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <!---->
+            </Button>
+            <Button x:Name="Btn_OK"
+                    Content="OK"
+                    Command="{Binding ClickCommand}"
+                    CommandParameter="{Binding Children, ElementName=Stac}"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
