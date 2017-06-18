@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-18T13:50:56.600</Modified>
+      <Modified>2017-06-18T14:46:26.576</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\bin\x86\Debug\UW_Demo_MVVM.exe">
       <PackagePath>entrypoint\UW_Demo_MVVM.exe</PackagePath>
-      <Modified>2017-06-18T13:50:55.298</Modified>
+      <Modified>2017-06-18T14:46:23.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tran\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -553,6 +553,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-06T02:58:47.333</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\Remember\StickyNotesUWP.txt">
+      <PackagePath>Remember\StickyNotesUWP.txt</PackagePath>
+      <Modified>2017-06-18T14:02:48.521</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\bin\x86\Debug\UW_Demo_MVVM.xr.xml">
       <PackagePath>UW_Demo_MVVM.xr.xml</PackagePath>
       <Modified>2017-06-18T13:50:55.124</Modified>
@@ -564,11 +568,11 @@
     <AppxPackagedFile Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-18T13:50:55.998</Modified>
+      <Modified>2017-06-18T14:46:25.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\bin\x86\Debug\Core\UW_Demo_MVVM.exe">
       <PackagePath>UW_Demo_MVVM.exe</PackagePath>
-      <Modified>2017-06-18T13:50:56.595</Modified>
+      <Modified>2017-06-18T14:46:26.564</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -415,6 +415,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\Remember\StickyNotesUWP.txt">
+      <PackagePath>Remember\StickyNotesUWP.txt</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tran\Documents\Visual Studio 2017\Projects\UW_Demo_MVVM\UW_Demo_MVVM\bin\x86\Debug\UW_Demo_MVVM.xr.xml">
       <PackagePath>UW_Demo_MVVM.xr.xml</PackagePath>
     </AppxPackagedFile>

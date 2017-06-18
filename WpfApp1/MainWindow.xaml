@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" 
+        WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <local:VM  x:Key="Key"></local:VM>
     </Window.Resources>

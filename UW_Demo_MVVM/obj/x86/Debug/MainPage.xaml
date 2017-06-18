@@ -8,18 +8,17 @@
     mc:Ignorable="d"
     xmlns:i="using:Microsoft.Xaml.Interactivity"
     xmlns:core="using:Microsoft.Xaml.Interactions.Core">
-    
     <Page.DataContext>
         
         <local:ViewModel></local:ViewModel>
     </Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         
-        <StackPanel Orientation="Vertical" x:Name="Stac">
-            <TextBlock Name="Txbl_a"
+        <StackPanel x:ConnectionId='1' Orientation="Vertical" x:Name="Stac">
+            <TextBlock x:ConnectionId='2' Name="Txbl_a"
                        Height="50"
                        Text="{Binding Txt.Text}"></TextBlock>
-            <TextBox x:Name="Txb_a"
+            <TextBox x:ConnectionId='3' x:Name="Txb_a"
                      Background="Bisque">
                 <!--ap dung cho tat ca cac event va Control-->
                 <i:Interaction.Behaviors>
@@ -29,17 +28,17 @@
                 </i:Interaction.Behaviors>
                 <!---->
             </TextBox>
-            <Button x:Name="Bnt_Click"
+            <Button x:ConnectionId='4' x:Name="Bnt_Click"
                     HorizontalAlignment="Stretch"
                     Content=" Btn_Click">
                 
             </Button>
-            <Button x:Name="Btn_OK"
+            <Button x:ConnectionId='5' x:Name="Btn_OK"
                     Content="OK"
                     HorizontalAlignment="Stretch"
                     Command="{Binding Click}"
                     CommandParameter="{Binding ElementName=Stac, Path=Children}"></Button>
-            <Button x:Name="Click"
+            <Button x:ConnectionId='6' x:Name="Click"
                     Content="Click"
                     Command="{Binding ClickCommand}"
                     HorizontalAlignment="Stretch"></Button>       
@@ -47,3 +46,4 @@
 
     </Grid>
 </Page>
+
