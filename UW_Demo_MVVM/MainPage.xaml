@@ -9,8 +9,7 @@
     xmlns:i="using:Microsoft.Xaml.Interactivity"
     xmlns:core="using:Microsoft.Xaml.Interactions.Core">
     
-    <Page.DataContext>
-        
+    <Page.DataContext>        
         <local:ViewModel></local:ViewModel>
     </Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
